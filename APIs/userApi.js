@@ -1,7 +1,7 @@
 const express = require('express');
 const verifyUser = require('../middlewares/verifyToken');
 const { getUserInfo, editUserInfo, addToWishlist, getWishlist, removeFromWishlist } = require('../controllers/userController');
-const upload = require("../multer.middleware.js")
+const upload = require("../middlewares/multer.middleware")
 const router = express.Router();
 
 

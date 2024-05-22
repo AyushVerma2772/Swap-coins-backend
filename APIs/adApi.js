@@ -1,5 +1,5 @@
 const express = require("express");
-const upload = require("../multer.middleware.js");
+const upload = require("../middlewares/multer.middleware");
 const verifyUser = require("../middlewares/verifyToken.js");
 const { createAd, getAllAds, getAdById, deleteAd, editAd, getSearchedAds } = require("../controllers/adController.js");
 
