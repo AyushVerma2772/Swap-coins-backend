@@ -55,6 +55,7 @@ const getAllAds = async (req, res) => {
                 select: 'name phoneNumber email profileImgUrl address',
                 model: UserModel
             })
+            .sort({ createdAt: -1 })
             .skip(skip)
             .limit(limit);
 
